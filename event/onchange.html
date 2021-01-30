@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function onchangefun() {
+            alert("静态注册onchange")
+        }
+        window.onload=function () {
+            var selobj =document.getElementById("2")
+            selobj.onchange=function () {
+                alert("动态注册onchange")
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+请选择你心中的女神
+<select onchange="onchangefun()">
+    <option>孙晓慧</option>
+    <option>张碧晨</option>
+    <option>邓紫棋</option>
+    <option>杨幂</option>
+</select>
+请选择你心目中的男神
+<select id="2">
+    <option>彭于晏</option>
+    <option>韩浩泽</option>
+    <option>王力宏</option>
+    <option>华晨宇</option>
+
+</select>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function onblurfun() {
+            console.log("静态注册失去焦点事件")//此句话打印到浏览器控制台上
+        }
+        window.onload=function() {
+            var objonblur=document.getElementById("password")
+            objonblur.onblur=function () {
+                console.log("动态注册失去焦点事件")
+            }
+        }
+    </script>
+</head>
+<body>
+用户名<input type="text" onblur="onblurfun()"><br>
+密码<input type="password"id="password">
+</body>
+</html>

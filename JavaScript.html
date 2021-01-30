@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function sum(){
+            var result=0;
+            for (var i=0;i<arguments.length;i++){
+                result=result+arguments[i];
+            }
+            return result;
+        }
+        alert(sum(1,2,3,4,5,6,7,8))
+        var object=new Object();
+        object.name="华仔";
+        object.age=10;
+        object.fun=function(){
+            alert("姓名"+this.name+"年龄"+this.age);
+        };
+        alert(object.age);
+        object.fun();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

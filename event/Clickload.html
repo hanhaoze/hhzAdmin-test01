@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        button{
+            width:50px;
+            height:30px;
+        }
+    </style>
+    <script>
+        function onclickfun() {
+            alert("这是静态注册的onload")
+        }
+        window.onclick=function () {
+            document.getElementById("btn01")
+            alert("这是动态注册的onload")
+        }
+    </script>
+</head>
+<body>
+<button ONCLICK="onclickfun()" >1</button>
+<button id="btn01">2</button>
+</body>
+</html>

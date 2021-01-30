@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            color: red;
+        }
+        p{
+            text-align: center;
+        }
+        input{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+<p>正在跳转至首页>-----<span id="number">5</span></p>
+<input type="button"id="btn" value="若5秒后无反应应可手动点击跳转">
+<script>
+    "use strict"
+    var btn=document.getElementById("btn");
+    btn.onclick=function () {
+        location.href="https://www.baidu.com"
+    }
+    var second=5;
+    function fun() {
+        var number = document.getElementById("number");
+        second--;
+        if (second<=0){
+            location.href="https://www.baidu.com"
+        }
+        number.innerHTML=second
+    }
+    setInterval(fun,1000)
+
+</script>
+</body>
+</html>

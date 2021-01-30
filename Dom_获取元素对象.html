@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="1">
+    我最帅
+</h1>
+<img src="img/off.gif" id="off">
+<script>
+    var elementById = document.getElementById("1");
+    alert("改变一下？")
+    elementById.innerHTML="也没那么帅";
+    var lightoff = document.getElementById("off");
+    alert("要开灯吗")
+    lightoff.src="img/on.gif";
+
+
+
+</script>
+</body>
+</html>
